@@ -35,13 +35,20 @@
   
   		<div class="showcaseform card">
   			<h2> Request a form </h2>
+        
   			<div class="formcontrol">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="hidden">
+                <label> Don't fill this out if you're human: <input name="bot-field"> </label> 
+              </p>
   				<input type="text" name="name" placeholder="Name" required> 
   			</div>
-  			<form>
+
   			<div class="formcontrol">
   				<input type="text" name="company" placeholder="Company name" required> 
   			</div>
+
   			<div class="formcontrol">
   				<input type="text" name="email" placeholder="Email" required> 
   			</div>
